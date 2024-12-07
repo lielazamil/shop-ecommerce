@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  height: 70px;
+  background-color: grey;
+  padding: 10px 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.header-content .brand {
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  min-width: 80px;
+  /* background-color: blue; */
+  padding: 5px;
+  margin: 0px 5px;
+}
+nav li a:hover {
+  background-color: #0c8599;
+  color: rgb(172, 169, 169);
+  border-radius: 9px;
+  text-align: center;
+}
+/*********************form***********************/
+.section-form {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  text-align: center;
+  background-color: #060606;
+  border: 3px solid #4a4848;
+  padding: 20px;
+  border-radius: 28px;
+}
+.section-form h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #ffe4c9;
+}
+.section-form form input {
+  color: rgb(60, 58, 63);
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+  height: 30px;
+  border: 1px solid #f3f0ff;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  outline: none;
+}
+.section-form form input[type='submit']:hover {
+  opacity: 0.3;
+}
+nav ul#user_info {
+  display: none;
+}
+form a {
+  text-decoration: none;
+  color: #c1af9d;
+}
+form a:hover {
+  background-color: #c1af9d;
+  color: #0c8599;
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+}
+form p {
+  color: #f3f0ff;
+  display: inline-block;
+}
+/*////////////////////////////////////////////////////*/
+.products {
+  width: 60%;
+  margin: 10px 0;
+}
+.products_item {
+  margin-bottom: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.products_item_img {
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+.product_item_action {
+  flex: 1;
+  text-align: right;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+.products_item .add_to_cart {
+  display: block;
+  margin-left: auto;
+  background-color: #abcaaa;
+  color: #14121288;
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-size: 19px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.products_item .add_to_cart:hover {
+  background-color: #535f52;
+  color: #ddd;
+}
+.product_item_desc h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #633d18;
+}
+.product_item_desc p {
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #44403c;
+}
+.product_item_desc span {
+  color: #4a4848;
+}
+.products_item .fav {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin-left: auto;
+}
+/* ////////////////////////////////////////////////////// */
+
+nav ul#user_info li i {
+  color: #f7f3f3;
+  font-size: 25px;
+  cursor: pointer;
+}
+nav ul#user_info li {
+  margin: 0px 10px;
+  position: relative;
+}
+nav ul#user_info li .badge {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: cadetblue;
+  color: #fff;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  font-size: 13px;
+  display: none;
+}
+/* ///////////////////////////////////////// */
+.carts_products {
+  position: absolute;
+  width: 210px;
+  transform: translate(-40px, 0);
+  color: cadetblue;
+  text-align: center;
+  top: 62px;
+  padding: 10px;
+  border: 1px solid #77859d;
+  border-radius: 9px;
+  display: none;
+}
+.carts_products a {
+  display: block;
+  color: #77859d;
+  margin: 2px 0;
+  padding: 0;
+}
